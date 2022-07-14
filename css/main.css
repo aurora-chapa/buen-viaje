@@ -180,7 +180,7 @@ body {
     grid-template-rows: 130px auto;
   }
   .header-main-phrase {
-    font-size: 56px;
+    font-size: 7vw;
   }
   .header-main-arrow {
     height: 110px;
@@ -195,11 +195,11 @@ body {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     grid-template-columns: 1fr;
-    grid-template-rows: 90px 1fr auto;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: "main" "slogan" "image";
   }
   .header-main-phrase {
-    font-size: 50px;
+    font-size: 12vw;
   }
   .header-main-arrow {
     height: 70px;
@@ -403,7 +403,7 @@ body {
 
 .guarantee {
   min-height: 150px;
-  background: linear-gradient(90deg, #f9a0a0 0%, #f9a0a0 24%, #ffa75b 100%);
+  background: linear-gradient(90deg, rgb(249, 160, 160) 0%, rgb(249, 160, 160) 24%, rgb(255, 167, 91) 100%);
   padding: 20px;
 }
 .guarantee-wrapper {
