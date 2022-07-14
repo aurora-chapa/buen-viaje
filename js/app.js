@@ -72,7 +72,7 @@ function readProductContent (product) {
 }
 
 //Adds product html to cart
-function cartLayout (cost) {
+function cartLayout () {
     cleanHTML();
 
     productsOnCart.forEach ( product => {
