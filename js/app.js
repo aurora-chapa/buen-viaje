@@ -104,10 +104,12 @@ function cartLayout () {
     cartStorage();
 }
 
+//Shows cart
 function showCart () {
     document.getElementById('cart').style.display = "block";
 }
 
+//Hides cart
 function hideCart (element) {
     if (element.id != "cart" 
     && !element.target.classList.contains("cart") 
