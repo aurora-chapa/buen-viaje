@@ -1,5 +1,5 @@
 .cart {
-    min-width: 400px;
+    width: 400px;
     background-color: $white;
     box-shadow: rgba(114, 114, 114, 0.2) 0px 2px 25px 10px;
     border-radius: 10px;
@@ -130,6 +130,8 @@
     }
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
+        max-width: 350px;
+        min-width: 300px;
         right: -35px;
 
         &-product {
