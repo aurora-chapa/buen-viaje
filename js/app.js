@@ -109,10 +109,27 @@ function showCart () {
 }
 
 function hideCart (element) {
-    // if (!document.contains(cart.target)) {
-    //     document.getElementById('cart').style.display = "none";
-    //   }
-    if(element.id != "cart" && element.target.parentNode.id != "cart-div"){
+    if (element.id != "cart" 
+    && !element.target.classList.contains("cart") 
+    && !element.target.classList.contains("cart-top") 
+    && !element.target.classList.contains("paragraph-dark") 
+    && !element.target.classList.contains("cart-top-price")
+    && !element.target.classList.contains("cart-top-price-value")
+    && !element.target.classList.contains("cart-items")
+    && !element.target.classList.contains("cart-cta")
+    && !element.target.classList.contains("cart-cta-checkout")
+    && !element.target.classList.contains("cart-cta-view")
+    && !element.target.classList.contains("cart-cta-delete")
+    && !element.target.classList.contains("cart-product")
+    && !element.target.classList.contains("cart-product-thumb")
+    && !element.target.classList.contains("cart-product-thumb-image")
+    && !element.target.classList.contains("cart-product-title")
+    && !element.target.classList.contains("cart-product-price")
+    && !element.target.classList.contains("cart-product-amount")
+    && !element.target.classList.contains("cart-product-delete")
+    && !element.target.classList.contains("current-price-small")
+    && !element.target.classList.contains("current-price-small")
+    ) {
         cart.style.display = 'none';
     }
 }
