@@ -10,9 +10,9 @@ loadEventListeners();
 function loadEventListeners () {
     productsList.addEventListener("click", addToCart);
     cart.addEventListener("click", deleteCartElement);
-    cartDiv.addEventListener("mouseover", showCart);
-    cartButton.addEventListener("mouseover", showCart);
-    window.addEventListener("mouseout", hideCart);
+    cartDiv.addEventListener("click", showCart);
+    cartButton.addEventListener("click", showCart);
+    window.addEventListener("mouseover", hideCart);
 
     //Removes all products from cart
     deleteCart.addEventListener("click", () => {
