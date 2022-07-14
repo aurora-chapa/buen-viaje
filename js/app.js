@@ -112,7 +112,6 @@ function showCart () {
 
 //Hides cart
 function hideCart (element) {
-    element.preventDefault();
     if (element.id != "cart" 
     && !element.target.classList.contains("cart") 
     && !element.target.classList.contains("cart-top") 
