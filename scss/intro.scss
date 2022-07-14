@@ -1,0 +1,62 @@
+.intro {
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    gap: 40px;
+    margin: auto;
+    padding: 60px 20px;
+
+    $cards: "first", "second", "third";
+
+    @each $card in $cards {
+        &-#{$card} {
+            max-width: auto;
+            height: 195px;
+            border-radius: 16px;
+            justify-content: center;
+        }
+    }
+
+    &-first {
+        background-color: rgba($color: $secondary, $alpha: 0.4);
+    }
+
+    &-second {
+        background-color: rgba($color: $red-light, $alpha: 0.4);
+    }
+
+    &-third {
+        background-color: rgba($color: $primary, $alpha: 0.4);
+    }
+
+    &-label {
+        width: 215px;
+        padding: 45px 5px 10px 30px;
+
+        &-text {
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            color: $primary-strong;
+        }
+    }
+
+    &-image {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        width: 150px;
+        margin: auto;
+        position: relative;
+        left: 70%;
+        bottom: 50%;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(110%) rotate(10deg);
+        }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &-image {left: 60%;}
+    }
+}

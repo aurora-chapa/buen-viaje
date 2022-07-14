@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="84px" viewBox="0 0 88 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Star</title>
+    <defs>
+        <linearGradient x1="114.031271%" y1="112.835507%" x2="6.84943546%" y2="8.84795858%" id="linearGradient-1">
+            <stop stop-color="#4B8F74" offset="0%"></stop>
+            <stop stop-color="#F6DB80" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="40 71.4120558 27.6393202 78.0422607 21.5364569 65.412887 7.63932023 63.5114101 10.1253597 49.7068591 0 40 10.1253597 30.2931409 7.63932023 16.4885899 21.5364569 14.587113 27.6393202 1.95773935 40 8.58794422 52.3606798 1.95773935 58.4635431 14.587113 72.3606798 16.4885899 69.8746403 30.2931409 80 40 69.8746403 49.7068591 72.3606798 63.5114101 58.4635431 65.412887 52.3606798 78.0422607"></polygon>
+        <filter x="-8.8%" y="-3.8%" width="117.5%" height="112.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.172143896 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Star" transform="translate(4.000000, 0.000000)">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>

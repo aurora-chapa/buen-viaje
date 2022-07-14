@@ -1,0 +1,55 @@
+.navbar {
+    max-width: 1400px;
+    height: 65px;
+    margin: auto;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+
+    &-logo {
+        grid-column-start: 1;
+    }
+
+    &-links {
+        grid-column-start: 3;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &-currency {
+            display: flex;
+            align-items: center;
+    
+            &-mxn {
+                width: 36px;
+                background-size: contain;
+                margin-right: 10px;
+            }
+        }
+    
+        &-cart {
+            position: relative;
+
+            &-icon {
+                width: 32px;
+    
+                &:hover {
+                    transform: scale(110%);
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        grid-template-columns: 1fr 1fr;
+
+        &-logo {
+            width: 80%;
+            align-self: center;
+        }
+
+        &-links {
+            grid-column-start: 2;
+        }
+    }
+}

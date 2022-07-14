@@ -1,0 +1,63 @@
+@import 'color-system.scss';
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    width: 100%;
+    background-color: $background-color;
+}
+
+//Fonts
+
+.link {
+    @include text(16px, $secondary);
+    text-decoration: none;
+    &:hover {
+        color: $secondary-strong;
+    }
+
+    &-white {
+        @include text(16px, $white);
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+.title {
+    @include text(28px, $primary-strong, 700);
+    text-align: center;
+}
+
+.subtitle {
+    @include text(18px, $gray-strong, 700);
+
+    &-white {
+        @include text(18px, $white, 700);
+    }
+}
+
+.paragraph {
+    @include text(14px, $gray-medium);
+
+    &-white {
+        @include text(14px, $white);
+    }
+
+    &-dark {
+        @include text(14px, $gray-strong);
+    }
+}
+
+.current-price {
+    @include text(24px, $price, 700);
+
+    &-small {
+        @include text(16px, $price, 700);
+    }
+}

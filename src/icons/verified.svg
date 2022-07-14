@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-288.000000, -2704.000000)">
+            <g id="Group-9" transform="translate(288.000000, 2686.000000)">
+                <g id="Group" transform="translate(0.000000, 18.000000)">
+                    <polygon id="Path" points="0 0 60 0 60 60 0 60"></polygon>
+                    <path d="M30,2.5 L50.5425,7.065 C51.685,7.32 52.5,8.3325 52.5,9.505 L52.5,34.4725 C52.5,39.4875 49.9925,44.1725 45.82,46.9525 L30,57.5 L14.18,46.9525 C10.005,44.17 7.5,39.4875 7.5,34.475 L7.5,9.505 C7.5,8.3325 8.315,7.32 9.4575,7.065 L30,2.5 Z M30,7.6225 L12.5,11.51 L12.5,34.4725 C12.5,37.815 14.17,40.9375 16.9525,42.7925 L30,51.4925 L43.0475,42.7925 C45.83,40.9375 47.5,37.8175 47.5,34.475 L47.5,11.51 L30,7.625 L30,7.6225 Z M41.13,20.555 L44.6675,24.09 L28.7575,40 L18.15,29.3925 L21.685,25.8575 L28.755,32.9275 L41.13,20.5525 L41.13,20.555 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

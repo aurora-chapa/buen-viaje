@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buen Viaje</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="src/brand/buenviaje-logo.svg" alt="logo" class="navbar-logo">
+
+        <div class="navbar-links">
+            <div class="navbar-links-currency">
+                <img class="navbar-links-currency-mxn" src="src/icons/mxn.svg">
+                <a href="#" class="link">MXN</a>
+            </div>
+            <div class="navbar-links-cart" id="cart-div">
+                <img class="navbar-links-cart-icon" src="src/icons/cart.svg" id="cart-button">
+                <div class="cart" id="cart" style="display: none;">
+                    <div class="cart-top">
+                        <p class="paragraph-dark"><b>Shopping cart</b></p>
+                        <div class="cart-top-price">
+                            <!-- <p class="paragraph-dark"><b>Total:</b></p> -->
+                            <div class="cart-top-price-value" id="total-price">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="cart-items" id="cart-list">
+            
+                    </div>
+            
+                    <div class="cart-cta">
+                        <button class="cart-cta-checkout" type="button"><b>Checkout</b></button>
+                        <button class="cart-cta-view" type="button"><b>View cart</b></button>
+                        <img class="cart-cta-delete" id="delete-cart" src="src/icons/delete-cart.svg">
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-container">
+        <div class="header">
+            <div class="header-main">
+                <p class="header-main-phrase">Keep calm <br> and travel</p>
+                <img class="header-main-arrow" src="src/brand/header-arrow.svg" alt="header-arrow">
+            </div>
+            <p class="header-slogan">Your trusted source for travel and adventure gear</p>
+            <img class="header-image" src="src/brand/header.png" alt="header">
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="intro-first">
+            <div class="intro-label">
+                <p class="intro-label-text">
+                    <b>Explore our original products</b> made with love for you!
+                </p>
+            </div>
+            <img class="intro-image" src="src/images/products/cup.png" alt="cup.png">
+        </div>
+
+        <div class="intro-second">
+            <div class="intro-label">
+                <p class="intro-label-text">
+                    <b>Trending products,</b> don't miss yours!
+                </p>
+            </div>
+            <img class="intro-image" src="src/images/products/pillow.png" alt="termo.png">
+        </div>
+
+        <div class="intro-third">
+            <div class="intro-label">
+                <p class="intro-label-text">
+                    <b>What’s new?</b> Take a look at the latest products!
+                </p>
+            </div>
+            <img class="intro-image" src="src/images/products/headphones.png" alt="termo.png">
+        </div>
+    </section>
+
+    <article class="main">
+        <h2 class="title">Products you'll fall in love with!</h2>
+
+        <div class="main-grid" id="products-list">
+            <div class="main-card">
+                <div class="main-card-product">
+                    <img class="main-card-product-image" src="src/images/products/tent.jpeg">
+                </div>
+    
+                <div class="main-card-product-title">
+                    <p class="subtitle">Coleman 8-Person Red Canyon Tent</p>
+                </div>
+    
+                <div class="main-card-grid">
+                    <div class="main-card-grid-seller">
+                        <img class="main-card-grid-seller-photo" src="src/images/sellers/prpic1.png">
+                        <p class="paragraph">Roberto González</p>
+                    </div>
+    
+                    <div class="main-card-grid-score">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart" src="src/icons/gray-heart.svg">
+                    </div>
+    
+                    <div class="main-card-grid-purchase">
+                        <div class="main-card-grid-purchase-price">
+                            <div class="main-card-grid-purchase-price-current">
+                                <p class="current-price" data-id="1">$2,250</p>
+                            </div>
+                            <p class="paragraph">$2,500</p>
+                        </div>
+    
+                        <div class="main-card-grid-purchase-cta">
+                            <a class="main-card-add-cart" href="#" data-id="1">
+                                <img class="main-card-grid-purchase-cta-cart" src="src/icons/cart.svg">
+                            </a>
+                            <img class="main-card-grid-purchase-cta-wishlist" src="src/icons/add-to-list.svg">
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="main-card">
+                <div class="main-card-product">
+                    <img class="main-card-product-image" src="src/images/products/flashlight.jpeg">
+                </div>
+    
+                <div class="main-card-product-title">
+                    <p class="subtitle">Waterproof LED Flashlight</p>
+                </div>
+    
+                <div class="main-card-grid">
+                    <div class="main-card-grid-seller">
+                        <img class="main-card-grid-seller-photo" src="src/images/sellers/prpic2.png">
+                        <p class="paragraph">Alex Johnson</p>
+                    </div>
+    
+                    <div class="main-card-grid-score">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart" src="src/icons/gray-heart.svg">
+                        <img class="heart" src="src/icons/gray-heart.svg">
+                    </div>
+    
+                    <div class="main-card-grid-purchase">
+                        <div class="main-card-grid-purchase-price">
+                            <div class="main-card-grid-purchase-price-current">
+                                <p class="current-price" data-id="2">$333</p>
+                            </div>
+                            <p class="paragraph">$370</p>
+                        </div>
+    
+                        <div class="main-card-grid-purchase-cta">
+                            <a class="main-card-add-cart" href="#" data-id="2">
+                                <img class="main-card-grid-purchase-cta-cart" src="src/icons/cart.svg">
+                            </a>
+                            <img class="main-card-grid-purchase-cta-wishlist" src="src/icons/add-to-list.svg">
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="main-card">
+                <div class="main-card-product">
+                    <img class="main-card-product-image" src="src/images/products/sleeping.jpg">
+                </div>
+    
+                <div class="main-card-product-title">
+                    <p class="subtitle">Waterproof sleeping bag</p>
+                </div>
+    
+                <div class="main-card-grid">
+                    <div class="main-card-grid-seller">
+                        <img class="main-card-grid-seller-photo" src="src/images/sellers/prpic3.png">
+                        <p class="paragraph">Alice Wilson</p>
+                    </div>
+    
+                    <div class="main-card-grid-score">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart" src="src/icons/gray-heart.svg">
+                        <img class="heart" src="src/icons/gray-heart.svg">
+                    </div>
+    
+                    <div class="main-card-grid-purchase">
+                        <div class="main-card-grid-purchase-price">
+                            <div class="main-card-grid-purchase-price-current">
+                                <p class="current-price" data-id="3">$333</p>
+                            </div>
+                            <p class="paragraph">$370</p>
+                        </div>
+    
+                        <div class="main-card-grid-purchase-cta">
+                            <a class="main-card-add-cart" href="#" data-id="3">
+                                <img class="main-card-grid-purchase-cta-cart" src="src/icons/cart.svg">
+                            </a>
+                            <img class="main-card-grid-purchase-cta-wishlist" src="src/icons/add-to-list.svg">
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="main-card">
+                <div class="main-card-product">
+                    <img class="main-card-product-image" src="src/images/products/backpack.jpg">
+                </div>
+    
+                <div class="main-card-product-title">
+                    <p class="subtitle">TETON Sports Ultralight Backpacks</p>
+                </div>
+    
+                <div class="main-card-grid">
+                    <div class="main-card-grid-seller">
+                        <img class="main-card-grid-seller-photo" src="src/images/sellers/prpic4.png">
+                        <p class="paragraph">Gopichand Sana</p>
+                    </div>
+    
+                    <div class="main-card-grid-score">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart" src="src/icons/gray-heart.svg">
+                    </div>
+    
+                    <div class="main-card-grid-purchase">
+                        <div class="main-card-grid-purchase-price">
+                            <div class="main-card-grid-purchase-price-current">
+                                <p class="current-price" data-id="4">$3,420</p>
+                            </div>
+                            <p class="paragraph">$3,800</p>
+                        </div>
+    
+                        <div class="main-card-grid-purchase-cta">
+                            <a class="main-card-add-cart" href="#" data-id="4">
+                                <img class="main-card-grid-purchase-cta-cart" src="src/icons/cart.svg">
+                            </a>
+                            <img class="main-card-grid-purchase-cta-wishlist" src="src/icons/add-to-list.svg">
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="main-card">
+                <div class="main-card-product">
+                    <img class="main-card-product-image" src="src/images/products/sandals.jpg">
+                </div>
+    
+                <div class="main-card-product-title">
+                    <p class="subtitle">Elegant men's summer sandals</p>
+                </div>
+    
+                <div class="main-card-grid">
+                    <div class="main-card-grid-seller">
+                        <img class="main-card-grid-seller-photo" src="src/images/sellers/prpic5.png">
+                        <p class="paragraph">Nahia Colunga</p>
+                    </div>
+    
+                    <div class="main-card-grid-score">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart" src="src/icons/gray-heart.svg">
+                    </div>
+    
+                    <div class="main-card-grid-purchase">
+                        <div class="main-card-grid-purchase-price">
+                            <div class="main-card-grid-purchase-price-current">
+                                <p class="current-price" data-id="5">$720</p>
+                            </div>
+                            <p class="paragraph">$800</p>
+                        </div>
+    
+                        <div class="main-card-grid-purchase-cta">
+                            <a class="main-card-add-cart" href="#" data-id="5">
+                                <img class="main-card-grid-purchase-cta-cart" src="src/icons/cart.svg">
+                            </a>
+                            <img class="main-card-grid-purchase-cta-wishlist" src="src/icons/add-to-list.svg">
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="main-card">
+                <div class="main-card-product">
+                    <img class="main-card-product-image" src="src/images/products/camera.jpg">
+                </div>
+    
+                <div class="main-card-product-title">
+                    <p class="subtitle">Polaroid Now 9059 - Instant Camera</p>
+                </div>
+    
+                <div class="main-card-grid">
+                    <div class="main-card-grid-seller">
+                        <img class="main-card-grid-seller-photo" src="src/images/sellers/prpic6.png">
+                        <p class="paragraph">Kip Collison</p>
+                    </div>
+    
+                    <div class="main-card-grid-score">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                    </div>
+    
+                    <div class="main-card-grid-purchase">
+                        <div class="main-card-grid-purchase-price">
+                            <div class="main-card-grid-purchase-price-current">
+                                <p class="current-price" data-id="6">$1,530</p>
+                            </div>
+                            <p class="paragraph">$1,700</p>
+                        </div>
+    
+                        <div class="main-card-grid-purchase-cta">
+                            <a class="main-card-add-cart" href="#" data-id="6">
+                                <img class="main-card-grid-purchase-cta-cart" src="src/icons/cart.svg">
+                            </a>
+                            <img class="main-card-grid-purchase-cta-wishlist" src="src/icons/add-to-list.svg">
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="main-card">
+                <div class="main-card-product">
+                    <img class="main-card-product-image" src="src/images/products/pillow.jpg">
+                </div>
+    
+                <div class="main-card-product-title">
+                    <p class="subtitle">Travel Pillow Ex4906 Fibrasca</p>
+                </div>
+    
+                <div class="main-card-grid">
+                    <div class="main-card-grid-seller">
+                        <img class="main-card-grid-seller-photo" src="src/images/sellers/prpic7.png">
+                        <p class="paragraph">Pablo Cambeiro</p>
+                    </div>
+    
+                    <div class="main-card-grid-score">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                    </div>
+    
+                    <div class="main-card-grid-purchase">
+                        <div class="main-card-grid-purchase-price">
+                            <div class="main-card-grid-purchase-price-current">
+                                <p class="current-price" data-id="7">$270</p>
+                            </div>
+                            <p class="paragraph">$300</p>
+                        </div>
+    
+                        <div class="main-card-grid-purchase-cta">
+                            <a class="main-card-add-cart" href="#" data-id="7">
+                                <img class="main-card-grid-purchase-cta-cart" src="src/icons/cart.svg">
+                            </a>
+                            <img class="main-card-grid-purchase-cta-wishlist" src="src/icons/add-to-list.svg">
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="main-card">
+                <div class="main-card-product">
+                    <img class="main-card-product-image" src="src/images/products/binoculars.jpg">
+                </div>
+    
+                <div class="main-card-product-title">
+                    <p class="subtitle">Bushnell Wide Angle Binoculars</p>
+                </div>
+    
+                <div class="main-card-grid">
+                    <div class="main-card-grid-seller">
+                        <img class="main-card-grid-seller-photo" src="src/images/sellers/prpic8.png">
+                        <p class="paragraph">Christopher Walker</p>
+                    </div>
+    
+                    <div class="main-card-grid-score">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart" src="src/icons/gray-heart.svg">
+                        <img class="heart" src="src/icons/gray-heart.svg">
+                    </div>
+    
+                    <div class="main-card-grid-purchase">
+                        <div class="main-card-grid-purchase-price">
+                            <div class="main-card-grid-purchase-price-current">
+                                <p class="current-price" data-id="8">$1,080</p>
+                            </div>
+                            <p class="paragraph">$1,200</p>
+                        </div>
+    
+                        <div class="main-card-grid-purchase-cta">
+                            <a class="main-card-add-cart" href="#" data-id="8">
+                                <img class="main-card-grid-purchase-cta-cart" src="src/icons/cart.svg">
+                            </a>
+                            <img class="main-card-grid-purchase-cta-wishlist" src="src/icons/add-to-list.svg">
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="main-card">
+                <div class="main-card-product">
+                    <img class="main-card-product-image" src="src/images/products/swimsuit.jpg">
+                </div>
+    
+                <div class="main-card-product-title">
+                    <p class="subtitle">Bushnell Wide Angle Binoculars</p>
+                </div>
+    
+                <div class="main-card-grid">
+                    <div class="main-card-grid-seller">
+                        <img class="main-card-grid-seller-photo" src="src/images/sellers/prpic9.png">
+                        <p class="paragraph">Loni Bowcher</p>
+                    </div>
+    
+                    <div class="main-card-grid-score">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart-active" src="src/icons/red-heart.svg">
+                        <img class="heart" src="src/icons/gray-heart.svg">
+                        <img class="heart" src="src/icons/gray-heart.svg">
+                    </div>
+    
+                    <div class="main-card-grid-purchase">
+                        <div class="main-card-grid-purchase-price">
+                            <div class="main-card-grid-purchase-price-current">
+                                <p class="current-price" data-id="9">$810</p>
+                            </div>
+                            <p class="paragraph">$900</p>
+                        </div>
+    
+                        <div class="main-card-grid-purchase-cta">
+                            <a class="main-card-add-cart" href="#" data-id="9">
+                                <img class="main-card-grid-purchase-cta-cart" src="src/icons/cart.svg" href="#">
+                            </a>
+                            <img class="main-card-grid-purchase-cta-wishlist" src="src/icons/add-to-list.svg">
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-cta">
+            <button class="main-cta-button" type="button"><b>Explore all!</b></button>
+        </div>
+    </article>
+
+    <section class="guarantee">
+        <div class="guarantee-wrapper">
+            <div class="guarantee-grid">
+                <img class="guarantee-grid-image" src="src/icons/verified.svg">
+                <div class="guarantee-grid-subtitle">
+                    <p class="subtitle-white">Verified sellers</p>
+                </div>
+                <div class="guarantee-grid-paragraph">
+                    <p class="paragraph-white">Our sellers meet strict requirements. <br> You don't have to worry about scams or defective products.</p>
+                </div>
+            </div>
+    
+            <div class="guarantee-grid">
+                <img class="guarantee-grid-image" src="src/icons/shipping.svg">
+                <div class="guarantee-grid-subtitle">
+                    <p class="subtitle-white">Fast shipping</p>
+                </div>
+                <div class="guarantee-grid-paragraph">
+                    <p class="paragraph-white">Your order will arrive within seven days. <br> promise to provide you with the best delivery service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-grid-about"><a class="link-white" href="#">About us</a></div>
+            <div class="footer-grid-find"><a class="link-white" href="#">Find what you need</a></div>
+            <div class="footer-grid-blog"><a class="link-white" href="#">Blog</a></div>
+            <div class="footer-grid-careers"><a class="link-white" href="#">Work with us</a></div>
+            <div class="footer-grid-seller"><a class="link-white" href="#">Become a seller</a></div>
+            <div class="footer-grid-support"><a class="link-white" href="#">Support</a></div>
+
+            <div class="footer-grid-social">
+                <img class="footer-grid-social-icon" src="src/icons/facebook.svg">
+                <img class="footer-grid-social-icon" src="src/icons/twitter.svg">
+                <img class="footer-grid-social-icon" src="src/icons/instagram.svg">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

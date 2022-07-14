@@ -1,0 +1,80 @@
+.footer {
+    min-height: 195px;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-grid {
+        min-height: 65px;
+        margin: 30px;
+        display: grid;
+        grid-template-columns: repeat(200px, 1fr);
+        gap: 20px 60px;
+        grid-template-rows: 20px 20px;
+        grid-template-areas: "about find blog social"
+        "careers seller support social";
+
+        $links: "about", "find", "blog", "careers", "seller", "support";
+
+        @each $link in $links {
+            &-#{$link} {
+                align-self: center;
+            }
+        }
+
+        &-about {
+            grid-area: about;
+        }
+
+        &-find {
+            grid-area: find;
+        }
+
+        &-blog {
+            grid-area: blog;
+        }
+
+        &-careers {
+            grid-area: careers;
+        }
+
+        &-seller {
+            grid-area: seller;
+        }
+
+        &-support {
+            grid-area: support;
+        }
+
+        &-social {
+            grid-area: social;
+            align-self: center;
+
+            &-icon {
+                width: 24px;
+                margin: 0 5px;
+
+                &:hover {
+                    transform: scale(120%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &-grid {
+            grid-template-columns: 200px;
+            grid-template-rows: repeat(7, 20px);
+            grid-template-areas: 
+            "about"
+            "find"
+            "blog"
+            "careers"
+            "seller"
+            "support"
+            "social";
+        }
+    }
+}

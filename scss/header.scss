@@ -1,0 +1,111 @@
+.header-container {
+    border-bottom: 20px solid $secondary;
+    padding: 5px 20px;
+    margin: auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: minmax(300px, 800px) auto;
+    grid-template-rows: 220px auto;
+    grid-template-areas: 
+    "main image"
+    "slogan image";
+    gap: 20px;
+    max-width: 1400px;
+    margin: auto;
+
+    &-main {
+        grid-area: main;
+        display: flex;
+
+        &-phrase {
+            font-size: 100px;
+            font-family: "Sriracha", cursive;
+            line-height: 100%;
+            color: $secondary;
+            text-shadow: 2px 2px 0 $secondary-strong, 
+            2px -2px 0 $secondary-strong, 
+            -2px 2px 0 $secondary-strong, 
+            -2px -2px 0 $secondary-strong, 
+            2px 0px 0 $secondary-strong, 
+            0px 2px 0 $secondary-strong, 
+            -2px 0px 0 $secondary-strong, 
+            0px -2px 0 $secondary-strong, 
+            4px 5px 0px $secondary-strong, 
+            4px -1px 0px $secondary-strong, 
+            -2px 5px 0px $secondary-strong;
+        }
+
+        &-arrow {
+            height: 150px;
+            justify-self: flex-start;
+            margin-left: 40px;
+        }
+    }
+
+    &-image {
+        max-width: 400px;
+        min-width: 200px;
+        justify-self: center;
+        grid-area: image;
+        margin-left: 20px;
+    }
+
+    &-slogan {
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: $secondary-strong;
+        grid-area: slogan;
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1110px) {
+        grid-template-rows: 130px auto;
+
+        &-main {
+            &-phrase {
+                font-size: 56px;
+            }
+
+            &-arrow {
+                height: 110px;
+            }
+        }
+
+        &-slogan {
+            font-size: 18px;
+        }
+
+        &-image {
+            max-width: 300px;
+        }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 1fr auto;
+        grid-template-areas: 
+        "main"
+        "slogan"
+        "image";
+
+        &-main {
+            &-phrase {
+                font-size: 50px;
+            }
+
+            &-arrow {
+                height: 70px;
+            }
+        }
+
+        &-slogan {
+            font-size: 16px;
+        }
+
+        &-image {
+            max-width: 300px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.guarantee {
+    min-height: 150px;
+    background: linear-gradient(90deg, rgba(249,160,160,1) 0%, rgba(249,160,160,1) 24%, rgba(255,167,91,1) 100%);
+    padding: 20px;
+
+    &-wrapper {
+        min-height: 150px;
+        max-width: 1400px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-grid {
+        max-width: 760px;
+        display: grid;
+        margin: 30px auto;
+        grid-template-columns: 70px 1fr;
+        grid-template-rows: 30px 1fr;
+        grid-template-areas: "icon subtitle"
+        "icon paragraph";
+
+        &-image {
+            grid-area: icon;
+            align-self: center;
+        }
+
+        &-subtitle {
+            grid-area: subtitle;
+        }
+
+        &-paragraph {
+            grid-area: paragraph;
+        }
+    }
+}

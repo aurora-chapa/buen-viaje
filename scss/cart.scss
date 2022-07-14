@@ -1,0 +1,139 @@
+.cart {
+    min-width: 400px;
+    background-color: $white;
+    box-shadow: rgba(114, 114, 114, 0.2) 0px 2px 25px 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: -48px;
+    top: 50px;
+    
+    &:before {
+        content: "";
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid $white;
+        position: relative;
+        top: -30px;
+        left: 80%;
+    }
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $gray-light;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        &-price {
+            display: grid;
+            grid-template-columns: 45px 1fr;
+            gap: 5px;
+        }
+    }
+
+    &-items {
+        max-height: 150px;
+        overflow-y: scroll;
+    }
+
+    &-product {
+        display: grid;
+        grid-template-columns: 40px 180px auto 30px 25px;
+        gap: 10px;
+        padding: 0px 20px 20px 20px;
+        align-items: center;
+
+        &-thumb {
+            width: 35px;
+            height: 35px;
+            grid-column-start: 1;
+
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+
+            &-image {
+                max-width: 35px;
+                max-height: 100%;
+            }
+        }
+
+        &-title {
+            grid-column-start: 2;
+        }
+
+        &-price {
+            grid-column-start: 3;
+            justify-self: flex-end;
+        }
+
+        &-amount {
+            grid-column-start: 4;
+            justify-self: center;
+        }
+
+        &-delete {
+            grid-column-start: 5;
+
+            &:hover {
+                transform: scale(120%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-cta {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 20px 20px 20px;
+
+        &-checkout {
+            padding: 10px 24px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            color: $white;
+            background-color: $secondary;
+            border-radius: 12px;
+            border: none;
+
+            &:hover {
+                background-color: $secondary-strong;
+                cursor: pointer;
+            }
+        }
+
+        &-view {
+            padding: 10px 24px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            color: $secondary;
+            background-color: $white;
+            border-radius: 12px;
+            border: 1px solid $secondary;
+
+            &:hover {
+                border: 1px solid $secondary-strong;
+                color: $secondary-strong;
+                cursor: pointer;
+            }
+        }
+
+        &-delete {
+            width: 24px;
+
+            &:hover {
+                transform: scale(120%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        right: -35px;
+
+        &-product {
+            grid-template-columns: 40px 130px auto 25px 30px;;
+        }
+    }
+}
