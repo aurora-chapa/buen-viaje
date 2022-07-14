@@ -3,14 +3,16 @@ const cartItems = document.querySelector("#cart-list");
 const deleteCart = document.querySelector("#delete-cart");
 const productsList = document.querySelector("#products-list");
 const cartButton = document.querySelector("#cart-button");
+const cartDiv = document.querySelector("#cart-div")
 let productsOnCart = [];
 
 loadEventListeners();
 function loadEventListeners () {
     productsList.addEventListener("click", addToCart);
     cart.addEventListener("click", deleteCartElement);
+    cartDiv.addEventListener("mouseover", showCart);
     cartButton.addEventListener("mouseover", showCart);
-    window.addEventListener("click", hideCart);
+    window.addEventListener("mouseout", hideCart);
 
     //Removes all products from cart
     deleteCart.addEventListener("click", () => {
@@ -105,11 +107,12 @@ function cartLayout () {
 
 //Shows cart
 function showCart () {
-    document.getElementById('cart').style.display = "block";
+        document.getElementById('cart').style.display = "block";
 }
 
 //Hides cart
 function hideCart (element) {
+    element.preventDefault();
     if (element.id != "cart" 
     && !element.target.classList.contains("cart") 
     && !element.target.classList.contains("cart-top") 
@@ -130,6 +133,8 @@ function hideCart (element) {
     && !element.target.classList.contains("cart-product-delete")
     && !element.target.classList.contains("current-price-small")
     && !element.target.classList.contains("current-price-small")
+    && !element.target.classList.contains("cart-div")
+    && !element.target.classList.contains("cart-button")
     ) {
         cart.style.display = 'none';
     }
