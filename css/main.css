@@ -130,13 +130,13 @@ body {
   }
 }
 
-.header-container {
+.cover-container {
   border-bottom: 20px solid #FFA75B;
   padding: 5px 20px;
   margin: auto;
 }
 
-.header {
+.cover {
   display: grid;
   grid-template-columns: minmax(300px, 800px) auto;
   grid-template-rows: 220px auto;
@@ -145,30 +145,30 @@ body {
   max-width: 1400px;
   margin: auto;
 }
-.header-main {
+.cover-main {
   grid-area: main;
   display: flex;
 }
-.header-main-phrase {
+.cover-main-phrase {
   font-size: 100px;
   font-family: "Sriracha", cursive;
   line-height: 100%;
   color: #FFA75B;
   text-shadow: 2px 2px 0 #C24D00, 2px -2px 0 #C24D00, -2px 2px 0 #C24D00, -2px -2px 0 #C24D00, 2px 0px 0 #C24D00, 0px 2px 0 #C24D00, -2px 0px 0 #C24D00, 0px -2px 0 #C24D00, 4px 5px 0px #C24D00, 4px -1px 0px #C24D00, -2px 5px 0px #C24D00;
 }
-.header-main-arrow {
+.cover-main-arrow {
   height: 150px;
   justify-self: flex-start;
   margin-left: 40px;
 }
-.header-image {
+.cover-image {
   max-width: 400px;
   min-width: 200px;
   justify-self: center;
   grid-area: image;
   margin-left: 20px;
 }
-.header-slogan {
+.cover-slogan {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -176,38 +176,38 @@ body {
   grid-area: slogan;
 }
 @media screen and (min-width: 768px) and (max-width: 1110px) {
-  .header {
+  .cover {
     grid-template-rows: 130px auto;
   }
-  .header-main-phrase {
+  .cover-main-phrase {
     font-size: 7vw;
   }
-  .header-main-arrow {
+  .cover-main-arrow {
     height: 110px;
   }
-  .header-slogan {
+  .cover-slogan {
     font-size: 18px;
   }
-  .header-image {
+  .cover-image {
     max-width: 300px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .header {
+  .cover {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "main" "slogan" "image";
   }
-  .header-main-phrase {
+  .cover-main-phrase {
     font-size: 12vw;
   }
-  .header-main-arrow {
+  .cover-main-arrow {
     height: 70px;
   }
-  .header-slogan {
+  .cover-slogan {
     font-size: 16px;
   }
-  .header-image {
+  .cover-image {
     max-width: 300px;
   }
 }
