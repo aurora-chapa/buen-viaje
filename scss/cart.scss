@@ -1,5 +1,5 @@
 .cart {
-    width: 400px;
+    width: 420px;
     background-color: $white;
     box-shadow: rgba(114, 114, 114, 0.2) 0px 2px 25px 10px;
     border-radius: 10px;
@@ -38,10 +38,11 @@
 
     &-product {
         display: grid;
-        grid-template-columns: 40px 180px auto 30px 25px;
+        grid-template-columns: 40px 4fr 2fr 1fr 1fr;
         gap: 10px;
-        padding: 0px 20px 20px 20px;
+        padding: 0px 40px 20px;
         align-items: center;
+        opacity: 0;
 
         &-thumb {
             width: 35px;
@@ -135,7 +136,8 @@
         right: -35px;
 
         &-product {
-            grid-template-columns: 40px 130px auto 25px 30px;;
+            padding: 10px;
+            grid-template-columns: 40px 6fr 2fr 1fr 1fr;;
         }
     }
 }

@@ -3,7 +3,7 @@ const cartItems = document.querySelector("#cart-list");
 const deleteCart = document.querySelector("#delete-cart");
 const productsList = document.querySelector("#products-list");
 const cartButton = document.querySelector("#cart-button");
-const cartDiv = document.querySelector("#cart-div")
+const cartDiv = document.querySelector("#cart-div");
 let productsOnCart = [];
 
 loadEventListeners();
@@ -171,4 +171,3 @@ function cleanHTML () {
         cartItems.removeChild(cartItems.firstChild);
     }
 }
-
