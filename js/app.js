@@ -112,7 +112,7 @@ function showCart () {
 
 //Hides cart
 function hideCart (element) {
-    if (element.id != "cart" 
+    if (element.id !== "cart" 
     && !element.target.classList.contains("cart") 
     && !element.target.classList.contains("cart-top") 
     && !element.target.classList.contains("paragraph-dark") 
@@ -151,6 +151,22 @@ function addToCart(element) {
     if (element.target.classList.contains("main-card-grid-purchase-cta-cart")) {
         const selectedProduct = element.target.parentElement.parentElement.parentElement.parentElement.parentElement;
         readProductContent(selectedProduct);
+
+        //Adds "Added to cart" message
+
+        const alertMessage = document.getElementById('alert-cart');
+
+        const alertOpacity = [
+            { opacity: 1 },
+        ];
+          
+        const alertTiming = {
+            duration: 2000,
+            iterations: 1,
+            easing: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
+        }
+                    
+        alertMessage.animate(alertOpacity, alertTiming);
     }
 }
 
